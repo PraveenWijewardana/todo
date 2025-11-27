@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+    <header>
+        <h1>My Tasks</h1>
+    </header>
+
+    <div class="task-input">
+        <input type="text" id="new-task" placeholder="What needs to be done?">
+        <input type="date" name="" id="time">
+        <button id="add-button" onclick="addTask();">+ Add Task</button>
+    </div>
+
+    <ul class="todo-list" id="task-list">
+        <div id="noImage"> <center><img src="images/noTasks.png" class="d-block" /></center></div>
+    </ul>
+
+</div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
